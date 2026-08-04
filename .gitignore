@@ -1,0 +1,65 @@
+# ==========================================
+# GABARITOS E ARTEFATOS DO INSTRUTOR
+# ==========================================
+# Pasta de gabaritos locais mantida exclusivamente no ambiente do instrutor (NÃO distribuída aos alunos):
+gabaritos/
+
+# ==========================================
+# ARTEFATOS GERADOS PELO ALUNO DURANTE O WORKSHOP
+# ==========================================
+bdd/*
+!bdd/**/.gitkeep
+
+diagram-as-code/*
+!diagram-as-code/**/.gitkeep
+
+src/*
+!src/**/.gitkeep
+
+tests/*
+!tests/**/.gitkeep
+
+# ==========================================
+# AMBIENTE VIRTUAL E DEPENDÊNCIAS PYTHON
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# CACHE E ARTEFATOS DE EXECUÇÃO
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.nox/
+.hypothesis/
+
+# ==========================================
+# CONFIGURAÇÕES DE IDES E EDITORES
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
