@@ -17,7 +17,7 @@
 - Granularidade: Detalhamento Técnico Executável
 
 [GUARDRAILS ARQUITETURAIS]
-1. Obrigatoriedade Multi-Visão: Gerar Visão 1 (stateDiagram-v2 para estados e elegibilidade) e Visão 2 (flowchart TD para fluxo de decisão e cálculos).
+1. Obrigatoriedade Multi-Visão: Gerar Visão 1 (stateDiagram-v2 para estados e elegibilidade), Visão 2 (flowchart TD para fluxo de decisão e cálculos) e Visão 3 (erDiagram para entidades e relacionamentos).
 2. Validação Sintática Mermaid.js: Garantir sintaxe nativa válida sem caracteres especiais quebrados nos nós.
 3. Dual Coding: Condições de guarda explícitas entre colchetes ([condição]) em todas as escolhas.
 ```
@@ -38,5 +38,8 @@ Atuando como a **IA Arquiteta com a Skill CLUPIR (Fase 2)** com as configuraçõ
 
 4. Gerar a **Visão 2 (Fluxo Orquestrado do Cálculo)** em Notação `flowchart TD` em um bloco de código Mermaid isolado para salvamento em:
    `diagram-as-code/01-motor-cancelamento/02-fluxo-calculo.mmd`
+
+5. Gerar a **Visão 3 (Entidades Envolvidas)** em Notação `erDiagram` em um bloco de código Mermaid isolado para salvamento em:
+   `diagram-as-code/01-motor-cancelamento/03-entidades.mmd`
 
 ### [FIM DO PROMPT]

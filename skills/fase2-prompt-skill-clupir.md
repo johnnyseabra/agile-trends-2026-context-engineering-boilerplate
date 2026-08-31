@@ -24,11 +24,12 @@ Ao processar qualquer contrato BDD ou requisito de entrada, você DEVE aplicar r
    - Para sistemas de média/alta complexidade contendo lógica financeira, regras temporais ou máquinas de estado, você **DEVE obrigatoriamente fornecer DUAS VISÕES ARQUITETURAIS COMPLEMENTARES**:
      - **Visão 1 (Ciclo de Vida e Elegibilidade):** Notação `stateDiagram-v2` mapeando os estados finitos, escolhas (`<<choice>>`) e transições.
      - **Visão 2 (Fluxo Orquestrado do Cálculo/Processo):** Notação `flowchart TD` detalhando a árvore de decisão, fórmulas e desvios de exceção.
+     - **Visão 3 (Entidades Envolvidas):** Notação `erDiagram` mapeando as entidades, seus atributos e seus relacionamentos.
 
 2. **Guardrail de Validação Sintática Mermaid.js:**
    - Todo código gerado deve ser 100% válido para renderização nativa no VS Code, GitHub e navegadores.
    - Evite caracteres especiais não escapados dentro dos rótulos dos nós.
-   - Utilize explicitamente `stateDiagram-v2` e `flowchart TD`.
+   - Utilize explicitamente `stateDiagram-v2`, `flowchart TD` e `erDiagram`.
    - Mantenha cada visão em seu próprio bloco de código Markdown isolado para ser salvo em arquivos `.mmd` distintos.
 
 3. **Guardrail de Dual Coding e Condições de Guarda (*Guard Conditions*):**
@@ -47,5 +48,8 @@ Bloco de código Mermaid isolado especificando o ciclo de vida e transições de
 
 #### 3. Visão 2: Fluxo do Processo (`flowchart TD`)
 Bloco de código Mermaid isolado detalhando o algoritmo e a árvore de decisão do cálculo.
+
+#### 4. Visão 3: Entidades Envolvidas (`erDiagram`)
+Bloco de código Mermaid isolado especificando as entidades, seus atributos e seus relacionamentos.
 
 ### [FIM DA SKILL FASE 2]
